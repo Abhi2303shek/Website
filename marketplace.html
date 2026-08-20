@@ -3,266 +3,160 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="India's dedicated B2B marketplace for the HoReCa industry. Source raw materials, equipment, furniture, talent, and services." />
-  <title>Catalyst Marketplace – HoReCa Supplies, Equipment & Services | Cafe Catalyst</title>
+  <meta name="description" content="Cafe Catalyst Marketplace — Source supplies, equipment, furniture and services for your F&amp;B business." />
+  <title>Marketplace – Cafe Catalyst</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- NAVBAR -->
+  <div class="preloader" id="preloader"><span class="preloader-logo">Cafe<span class="logo-dot">&middot;</span>Catalyst</span></div>
+
   <header class="navbar" id="navbar">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo">Cafe Catalyst</a>
-      <nav class="nav-links" id="navLinks">
-        <a href="index.html"           class="nav-link">Home</a>
-        <a href="index.html#services"  class="nav-link">What We Do</a>
-        <a href="packages.html"        class="nav-link">Packages</a>
-        <a href="community.html"       class="nav-link">Community</a>
-        <a href="pro.html"             class="nav-link">CatalystPro</a>
-        <a href="marketplace.html"     class="nav-link active">Marketplace</a>
-        <a href="ai.html"              class="nav-link">CatalystAI</a>
+      <a href="index.html" class="nav-logo">Cafe<span class="logo-dot">&middot;</span>Catalyst</a>
+      <nav class="nav-links" id="navLinks" aria-label="Main">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="index.html#services" class="nav-link">What We Do</a>
+        <a href="packages.html" class="nav-link">Packages</a>
+        <a href="community.html" class="nav-link">Community</a>
+        <a href="pro.html" class="nav-link">CatalystPro</a>
+        <a href="marketplace.html" class="nav-link active">Marketplace</a>
+        <a href="ai.html" class="nav-link">CatalystAI</a>
         <a href="index.html#consultation" class="nav-link nav-cta">Consultation</a>
       </nav>
       <div class="nav-actions">
-        <button class="dark-toggle" id="darkToggle" aria-label="Toggle dark mode">🌙</button>
-        <button class="hamburger" id="hamburger" aria-label="Open menu">
-          <span></span><span></span><span></span>
-        </button>
+        <button class="dark-toggle" id="darkToggle" aria-label="Toggle theme">&#9788;</button>
+        <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
       </div>
     </div>
-    <nav class="mobile-nav" id="mobileNav">
-      <a href="index.html"              class="mobile-link">Home</a>
-      <a href="index.html#services"     class="mobile-link">What We Do</a>
-      <a href="packages.html"           class="mobile-link">Packages</a>
-      <a href="index.html#consultation" class="mobile-link">Consultation</a>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+      <a href="index.html" class="mobile-link">Home</a>
+      <a href="index.html#services" class="mobile-link">What We Do</a>
+      <a href="packages.html" class="mobile-link">Packages</a>
+      <a href="community.html" class="mobile-link">Community</a>
+      <a href="pro.html" class="mobile-link">CatalystPro</a>
+      <a href="marketplace.html" class="mobile-link">Marketplace</a>
+      <a href="ai.html" class="mobile-link">CatalystAI</a>
+      <a href="index.html#consultation" class="mobile-link cta-link">Book Consultation</a>
     </nav>
   </header>
 
   <!-- HERO -->
-  <section class="page-hero mkt-hero">
+  <section class="page-hero">
     <div class="container">
-      <p class="hero-eyebrow">🛒 HoReCa's Own Marketplace</p>
-      <h1 class="page-hero-title">Catalyst Marketplace</h1>
-      <p class="page-hero-sub">Everything your outlet needs — in one place.</p>
-      <p class="comm-sub">Source raw supplies, kitchen equipment, furniture, packaging, talent, and professional services. Exclusively for the HoReCa industry.</p>
-      <div class="hero-btns">
-        <a href="#categories" class="btn btn-primary">Browse Categories →</a>
-        <a href="#vendor-signup" class="btn btn-outline">List Your Business</a>
+      <p class="hero-eyebrow">Marketplace</p>
+      <h1 class="page-hero-title">Source Everything<br>You Need</h1>
+      <p class="page-hero-sub">A curated marketplace connecting F&amp;B businesses with verified vendors for supplies, equipment, furniture &amp; services.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:2rem;">
+        <a href="index.html#consultation" class="btn btn-primary">List Your Business &rarr;</a>
+        <a href="#vendors" class="btn btn-outline">Browse Vendors</a>
       </div>
-    </div>
-  </section>
-
-  <!-- STATS -->
-  <section class="comm-stats-bar">
-    <div class="container comm-stats-inner">
-      <div class="comm-stat"><span class="comm-num">500+</span><span class="comm-label">Verified Vendors</span></div>
-      <div class="comm-stat"><span class="comm-num">8</span><span class="comm-label">Categories</span></div>
-      <div class="comm-stat"><span class="comm-num">40+</span><span class="comm-label">Cities Served</span></div>
-      <div class="comm-stat"><span class="comm-num">₹0</span><span class="comm-label">Listing Fee</span></div>
     </div>
   </section>
 
   <!-- CATEGORIES -->
-  <section class="section" id="categories">
+  <section class="section">
     <div class="container">
-      <div class="section-header">
-        <p class="section-eyebrow">Browse by Category</p>
-        <h2 class="section-title">Everything HoReCa, curated and verified.</h2>
+      <div class="section-header center">
+        <p class="section-eyebrow">Categories</p>
+        <h2 class="section-title">Everything for your kitchen &amp; dining room</h2>
       </div>
       <div class="cat-grid">
-        <div class="cat-card reveal"><span>🌾</span><h3>Raw Supplies</h3><p>Produce, dairy, dry goods, spices</p></div>
-        <div class="cat-card reveal"><span>🍳</span><h3>Kitchen Equipment</h3><p>Ovens, fryers, refrigeration, prep</p></div>
-        <div class="cat-card reveal"><span>🪑</span><h3>Furniture &amp; Interiors</h3><p>Tables, chairs, lighting, decor</p></div>
-        <div class="cat-card reveal"><span>📦</span><h3>Packaging &amp; Disposables</h3><p>Eco boxes, cups, cutlery, labels</p></div>
-        <div class="cat-card reveal"><span>💻</span><h3>Technology &amp; POS</h3><p>POS, KDS, printers, billing systems</p></div>
-        <div class="cat-card reveal"><span>👨‍🍳</span><h3>Uniforms &amp; Workwear</h3><p>Chef coats, aprons, caps, footwear</p></div>
-        <div class="cat-card reveal"><span>🧑‍🍳</span><h3>Talent &amp; Staffing</h3><p>Chefs, managers, staff via CatalystPro</p></div>
-        <div class="cat-card reveal"><span>🛠️</span><h3>Services</h3><p>Consultants, photographers, designers</p></div>
+        <div class="cat-card reveal"><span>&#127859;</span><h3>Ingredients</h3><p>Spices, oils, flours, sauces &amp; specialty items.</p></div>
+        <div class="cat-card reveal"><span>&#9881;&#65039;</span><h3>Equipment</h3><p>Ovens, fryers, mixers, refrigeration &amp; commercial gear.</p></div>
+        <div class="cat-card reveal"><span>&#127978;</span><h3>Furniture</h3><p>Tables, chairs, bar stools, counters &amp; custom builds.</p></div>
+        <div class="cat-card reveal"><span>&#128295;</span><h3>Services</h3><p>Interior design, signage, pest control &amp; maintenance.</p></div>
+        <div class="cat-card reveal"><span>&#127873;&#65039;</span><h3>Packaging</h3><p>Containers, bags, labels &amp; eco-friendly options.</p></div>
+        <div class="cat-card reveal"><span>&#128241;</span><h3>Tech</h3><p>POS systems, KDS, tablets, printers &amp; software.</p></div>
+        <div class="cat-card reveal"><span>&#128226;</span><h3>Marketing</h3><p>Printing, signage, uniforms &amp; branding materials.</p></div>
+        <div class="cat-card reveal"><span>&#128230;</span><h3>Logistics</h3><p>Delivery partners, cold chain &amp; fleet management.</p></div>
       </div>
     </div>
   </section>
 
   <!-- FEATURED VENDORS -->
-  <section class="section values-section">
+  <section class="section section-alt" id="vendors">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header center">
         <p class="section-eyebrow">Featured Vendors</p>
-        <h2 class="section-title">Verified, reviewed, and trusted by 300+ HoReCa outlets</h2>
+        <h2 class="section-title">Trusted by India's top restaurants</h2>
+        <p class="section-sub">Every vendor is verified &amp; reviewed by the community.</p>
       </div>
       <div class="vendor-grid">
         <div class="vendor-card reveal">
-          <div class="vendor-top">
-            <span class="vendor-icon">🌾</span>
-            <span class="vendor-tag new-tag">NEW</span>
-          </div>
-          <h3>FreshLink Agro</h3>
-          <p>Farm-to-kitchen fresh produce. Daily delivery to 12 cities. MOQ: ₹2,000.</p>
-          <div class="vendor-stars">★★★★★ <span>(142 reviews)</span></div>
-          <div class="vendor-tags"><span>Vegetables</span><span>Dairy</span><span>Herbs</span></div>
-          <a href="#rfq" class="btn btn-outline vendor-btn">Request Quote</a>
+          <div class="vendor-top"><span class="vendor-icon">&#127859;</span><span class="vendor-tag hot-tag">Hot</span></div>
+          <h3>SpiceRoot India</h3>
+          <p>Premium spice blends &amp; dry ingredients sourced directly from farms.</p>
+          <div class="vendor-stars">&#9733;&#9733;&#9733;&#9733;&#9734; <span>(128 reviews)</span></div>
+          <div class="vendor-tags"><span>Spices</span><span>Pan-India</span><span>Organic</span></div>
+          <a href="index.html#consultation" class="btn btn-outline vendor-btn">View Profile</a>
         </div>
         <div class="vendor-card reveal">
-          <div class="vendor-top">
-            <span class="vendor-icon">🍳</span>
-            <span class="vendor-tag hot-tag">HOT</span>
-          </div>
-          <h3>ProKitchen India</h3>
-          <p>Commercial kitchen equipment. Pan-India installation. EMI available.</p>
-          <div class="vendor-stars">★★★★☆ <span>(89 reviews)</span></div>
-          <div class="vendor-tags"><span>Ovens</span><span>Fryers</span><span>Refrigeration</span></div>
-          <a href="#rfq" class="btn btn-outline vendor-btn">Request Quote</a>
+          <div class="vendor-top"><span class="vendor-icon">&#9881;&#65039;</span><span class="vendor-tag new-tag">New</span></div>
+          <h3>KitchenPro Equipment</h3>
+          <p>Commercial kitchen equipment with installation &amp; AMC support.</p>
+          <div class="vendor-stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>(89 reviews)</span></div>
+          <div class="vendor-tags"><span>Equipment</span><span>AMC</span><span>Pan-India</span></div>
+          <a href="index.html#consultation" class="btn btn-outline vendor-btn">View Profile</a>
         </div>
         <div class="vendor-card reveal">
-          <div class="vendor-top">
-            <span class="vendor-icon">📦</span>
-            <span class="vendor-tag"></span>
-          </div>
+          <div class="vendor-top"><span class="vendor-icon">&#127978;</span><span class="vendor-tag hot-tag">Hot</span></div>
+          <h3>DineCraft Interiors</h3>
+          <p>Custom restaurant furniture, counters &amp; complete interior solutions.</p>
+          <div class="vendor-stars">&#9733;&#9733;&#9733;&#9733;&#9734; <span>(67 reviews)</span></div>
+          <div class="vendor-tags"><span>Furniture</span><span>Custom</span><span>Design</span></div>
+          <a href="index.html#consultation" class="btn btn-outline vendor-btn">View Profile</a>
+        </div>
+        <div class="vendor-card reveal">
+          <div class="vendor-top"><span class="vendor-icon">&#128241;</span><span class="vendor-tag new-tag">New</span></div>
+          <h3>POSify</h3>
+          <p>Cloud-based POS with inventory tracking, online ordering &amp; analytics.</p>
+          <div class="vendor-stars">&#9733;&#9733;&#9733;&#9733;&#9734; <span>(203 reviews)</span></div>
+          <div class="vendor-tags"><span>POS</span><span>SaaS</span><span>Integration</span></div>
+          <a href="index.html#consultation" class="btn btn-outline vendor-btn">View Profile</a>
+        </div>
+        <div class="vendor-card reveal">
+          <div class="vendor-top"><span class="vendor-icon">&#127873;&#65039;</span><span class="vendor-tag">Verified</span></div>
           <h3>EcoPack Solutions</h3>
-          <p>100% compostable packaging. Bulk orders with custom branding. GST invoice.</p>
-          <div class="vendor-stars">★★★★★ <span>(203 reviews)</span></div>
-          <div class="vendor-tags"><span>Eco-friendly</span><span>Custom Print</span></div>
-          <a href="#rfq" class="btn btn-outline vendor-btn">Request Quote</a>
+          <p>Sustainable packaging for delivery, takeaway &amp; dine-in needs.</p>
+          <div class="vendor-stars">&#9733;&#9733;&#9733;&#9733;&#9734; <span>(156 reviews)</span></div>
+          <div class="vendor-tags"><span>Eco</span><span>Packaging</span><span>Custom</span></div>
+          <a href="index.html#consultation" class="btn btn-outline vendor-btn">View Profile</a>
         </div>
-      </div>
-      <p class="jobs-lock">🔒 500+ more vendors available — <a href="#vendor-signup">join to access full directory</a></p>
-    </div>
-  </section>
-
-  <!-- HOW IT WORKS -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-eyebrow">How It Works</p>
-        <h2 class="section-title">Three steps to source anything your outlet needs</h2>
-      </div>
-      <div class="how-grid">
-        <div class="how-card reveal">
-          <div class="how-num">1</div>
-          <h3>Browse &amp; Shortlist</h3>
-          <p>Browse verified vendors by category, city, and rating. Shortlist up to 5.</p>
+        <div class="vendor-card reveal">
+          <div class="vendor-top"><span class="vendor-icon">&#128230;</span><span class="vendor-tag hot-tag">Hot</span></div>
+          <h3>QuickDeliver Logistics</h3>
+          <p>Same-day delivery fleet for restaurants &amp; cloud kitchens.</p>
+          <div class="vendor-stars">&#9733;&#9733;&#9733;&#9734;&#9734; <span>(94 reviews)</span></div>
+          <div class="vendor-tags"><span>Delivery</span><span>Fleet</span><span>Urban</span></div>
+          <a href="index.html#consultation" class="btn btn-outline vendor-btn">View Profile</a>
         </div>
-        <div class="how-card reveal">
-          <div class="how-num">2</div>
-          <h3>Send RFQ</h3>
-          <p>Submit a Request for Quote with your requirements. Get competitive bids within 48 hours.</p>
-        </div>
-        <div class="how-card reveal">
-          <div class="how-num">3</div>
-          <h3>Order &amp; Review</h3>
-          <p>Choose the best offer, place your order, and leave a verified review for the community.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- RFQ FORM -->
-  <section class="section contact-section" id="rfq">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-eyebrow">Request a Quote</p>
-        <h2 class="section-title">Tell us what you need — vendors will respond in 48 hrs</h2>
-      </div>
-      <div class="form-center-wrap">
-        <form class="contact-form comm-form" id="rfqForm">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="rfqPhone">WhatsApp *</label>
-              <input type="tel" id="rfqPhone" placeholder="+91 XXXXX XXXXX" required />
-            </div>
-            <div class="form-group">
-              <label for="rfqCity">City &amp; Outlet Name</label>
-              <input type="text" id="rfqCity" placeholder="e.g. Delhi, My Cafe" />
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="rfqReq">Requirements</label>
-            <textarea id="rfqReq" rows="4" placeholder="What do you need? Category, quantity, timeline..."></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary form-submit">Send RFQ →</button>
-          <p class="form-success" id="rfqSuccess">✅ RFQ Sent! Vendors will respond on WhatsApp within 48 hours.</p>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- VENDOR SIGNUP -->
-  <section class="section values-section" id="vendor-signup">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-eyebrow">List Your Business — Free</p>
-        <h2 class="section-title">Reach thousands of HoReCa buyers actively sourcing.</h2>
-        <p class="section-sub">Zero listing fee. Our team reviews all vendor listings within 2-3 business days.</p>
-      </div>
-      <div class="form-center-wrap">
-        <form class="contact-form comm-form" id="vendorForm">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="vBiz">Business Name *</label>
-              <input type="text" id="vBiz" placeholder="Your business name" required />
-            </div>
-            <div class="form-group">
-              <label for="vContact">Contact Person *</label>
-              <input type="text" id="vContact" placeholder="Your name" required />
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="vPhone">WhatsApp *</label>
-              <input type="tel" id="vPhone" placeholder="+91 XXXXX XXXXX" required />
-            </div>
-            <div class="form-group">
-              <label for="vCat">Category *</label>
-              <select id="vCat" required>
-                <option value="">Select category</option>
-                <option>Raw Supplies</option>
-                <option>Kitchen Equipment</option>
-                <option>Furniture &amp; Interiors</option>
-                <option>Packaging &amp; Disposables</option>
-                <option>Technology &amp; POS</option>
-                <option>Uniforms &amp; Workwear</option>
-                <option>Services</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="vCities">Cities You Serve *</label>
-            <input type="text" id="vCities" placeholder="e.g. Delhi, Mumbai, Pan-India" required />
-          </div>
-          <div class="form-group">
-            <label for="vDesc">Brief Description</label>
-            <textarea id="vDesc" rows="3" placeholder="What do you offer? USP, minimum order, etc."></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary form-submit">Submit for Verification →</button>
-          <p class="form-success" id="vendorSuccess">🎉 Application Received! Our team will verify your listing and reach out on WhatsApp within 2-3 business days.</p>
-        </form>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="container footer-inner">
-      <p class="footer-logo">Cafe Catalyst</p>
-      <nav class="footer-nav">
-        <a href="index.html">Home</a>
-        <a href="community.html">Community</a>
-        <a href="pro.html">CatalystPro</a>
-        <a href="marketplace.html">Marketplace</a>
-        <a href="ai.html">CatalystAI</a>
-        <a href="packages.html">Packages</a>
-      </nav>
-      <p class="footer-copy">© <span class="year"></span> Cafe Catalyst. All Rights Reserved.</p>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><p class="footer-logo">Cafe<span class="logo-dot">&middot;</span>Catalyst</p><p class="footer-tagline">India's premier F&amp;B consulting platform for HoReCa ventures.</p></div>
+        <div class="footer-col"><p class="footer-heading">Platform</p><a href="community.html">HoReCa Connect</a><a href="pro.html">CatalystPro</a><a href="marketplace.html">Marketplace</a><a href="ai.html">CatalystAI</a></div>
+        <div class="footer-col"><p class="footer-heading">Company</p><a href="index.html#services">Services</a><a href="packages.html">Packages</a><a href="index.html#consultation">Contact</a></div>
+        <div class="footer-col"><p class="footer-heading">Connect</p><a href="tel:+919718801660">+91 97188 01660</a><a href="mailto:sales@cafecatalyst.in">sales@cafecatalyst.in</a><a href="https://wa.me/919718801660" target="_blank" rel="noopener">WhatsApp</a></div>
+      </div>
+      <div class="footer-bottom"><p class="footer-copy">&copy; <span id="year"></span> Cafe Catalyst. All Rights Reserved.</p><p class="footer-copy">3rd Floor, Landmark Cyber Park, Sector 67, Gurugram</p></div>
     </div>
   </footer>
 
-  <a href="https://wa.me/919718801660?text=Hi%20Cafe%20Catalyst%2C%20I%20want%20to%20know%20more%20about%20the%20Marketplace!" class="whatsapp-btn" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="28" height="28"><path d="M16 3C9.373 3 4 8.373 4 15c0 2.385.67 4.61 1.832 6.5L4 29l7.697-1.813A12.94 12.94 0 0 0 16 27c6.627 0 12-5.373 12-12S22.627 3 16 3Z" fill="#fff"/><path d="M21.5 18.5c-.3-.15-1.77-.87-2.04-.97-.28-.1-.48-.15-.68.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.78-1.68-2.08-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.68-1.63-.93-2.23-.24-.58-.49-.5-.68-.51-.17-.01-.37-.01-.57-.01s-.52.07-.8.37c-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z" fill="#25D366"/></svg>
-    <span>Chat with Our Experts</span>
+  <a href="https://wa.me/919718801660?text=Hi%20Cafe%20Catalyst%2C%20I'd%20like%20to%20know%20about%20the%20marketplace" class="whatsapp-btn" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32" fill="none" width="24" height="24"><path d="M16 3C9.373 3 4 8.373 4 15c0 2.385.67 4.61 1.832 6.5L4 29l7.697-1.813A12.94 12.94 0 0 0 16 27c6.627 0 12-5.373 12-12S22.627 3 16 3Z" fill="#fff"/><path d="M21.5 18.5c-.3-.15-1.77-.87-2.04-.97-.28-.1-.48-.15-.68.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.78-1.68-2.08-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.68-1.63-.93-2.23-.24-.58-.49-.5-.68-.51-.17-.01-.37-.01-.57-.01s-.52.07-.8.37c-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z" fill="#25D366"/></svg>
+    <span>Browse Marketplace</span>
   </a>
 
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">&uarr;</button>
   <script src="script.js"></script>
 </body>
 </html>
